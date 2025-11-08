@@ -110,11 +110,7 @@ export class WorkerClient {
         })
         .filter((msg): msg is EventMessage => msg !== null)
 
-      // console.log()
-
       messages.forEach((msg: EventMessage) => {
-        // console.log('Received from worker:', msg.event)
-
         switch (msg.event) {
           case 'status_update':
             this.handleStatusUpdate(msg.data)
@@ -169,6 +165,7 @@ export class WorkerClient {
   }
 
   private handleStatusUpdate(status: { status: 'connected' | 'fail' | 'disconnected'; error?: string }) {
+    console.log(status)
     this.status = { ...this.status, rs485: { status: status.status, error: status.error } }
     this.broadcastStatus(this.status)
   }

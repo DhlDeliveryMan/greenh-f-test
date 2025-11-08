@@ -7,7 +7,7 @@ import { useDataContext } from '../../hooks/DataContext'
 interface AirParametersProps {}
 
 const AirParameters: React.FC<AirParametersProps> = () => {
-  const { airParameters } = useDataContext()
+  const {  } = useDataContext()
 
   return (
     <div className="flex items-center flex-col h-full w-full">
