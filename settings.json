@@ -1,0 +1,17 @@
+{
+  "General": {
+    "showDebug": true
+  },
+  "Climate": {
+    "targetTemp": 22,
+    "humidity": 50
+  },
+  "Irrigation": {
+    "wateringInterval": "33",
+    "autoIrrigation": true
+  },
+  "System": {
+    "wifiSSID": "",
+    "wifiPassword": ""
+  }
+}

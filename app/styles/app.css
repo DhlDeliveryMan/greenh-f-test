@@ -1,0 +1,26 @@
+@import './globals.css';
+@import './window.css';
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  overflow: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  line-height: 1.4;
+}
